@@ -1,0 +1,28 @@
+body {
+    margin: 3em 40em;
+}
+
+.justify-right {
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: right;
+}
+
+.margin-2 {
+    margin: 0 2em;
+}
+
+.margin-2 p {
+    margin: 0;
+}
+
+.margin-top {
+    margin: 2em 0;
+}

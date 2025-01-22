@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+
+}
+
+img {
+    margin: 5em;
+    width: 80%;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin-top: 5em;
+}
