@@ -44,7 +44,7 @@
         "ceo" => "Dennis Dansker"
     );
 
-    $company = $jyskeBank;
+    $company = $danskeBank;
   
 
 ?>
@@ -95,7 +95,7 @@
             <!-- img -->
             <?php
             
-              echo $jyskeBank["logo"];
+              echo $company["logo"];
             
             ?>
         </div>
