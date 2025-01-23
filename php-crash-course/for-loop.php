@@ -8,9 +8,9 @@
 <body>
     <?php
     
-    for($counter, $condition, $increment){
-        statement;
-     }
+    // for($counter, $condition, $increment){
+    //     statement;
+    //  }
     
     ?>
     <br>

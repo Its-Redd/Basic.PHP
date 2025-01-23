@@ -1,6 +1,18 @@
 <?php
 
-  require_once(dirname(__FILE__) ."./includes/price-calculator.php");
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
+$price = 100;
+$tax = 1.25;
+$sale = 0.85;
+
+require_once "./includes/price-calculator.php";
+$total = priceCalc( $price, $tax, $sale );
+$taxAmount = taxCalc( $price, $tax );
+$saleAmount = saleCalc( $price, $tax, $sale );
+
 
 ?>
 
@@ -10,6 +22,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price Calculator</title>
+    <style>
+        tr th{
+            text-align: left;
+        }
+        tr {
+            padding: 2em;
+            width: 33vw
+        }
+    </style>
 </head>
 <body>
     <table>
@@ -20,7 +41,8 @@
             <th>
                 <?php
                 
-                  
+                    echo $price;
+                    
                 
                 ?>
             </th>
@@ -32,7 +54,7 @@
             <th>
                 <?php
                 
-                  
+                  echo $taxAmount;
                 
                 ?>
             </th>
@@ -44,7 +66,7 @@
             <th>
                 <?php
                 
-                  
+                  echo $price * $tax;
                 
                 ?>
             </th>
@@ -55,14 +77,12 @@
                     Rabat (15%):
                 </p>
             </th>
-        </tr>
-        <tr>
             <th>
-                <?php
+            <?php
                 
-                  
-                
-                ?>
+                echo $saleAmount;
+              
+              ?>
             </th>
         </tr>
         <tr>
@@ -72,7 +92,7 @@
             <th>
                 <?php
                 
-                  
+                echo $total;  
                 
                 ?>
             </th>
