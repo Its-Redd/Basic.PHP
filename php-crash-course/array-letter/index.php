@@ -44,7 +44,7 @@
         "ceo" => "Dennis Dansker"
     );
 
-    $company = $danskeBank;
+    $company = $jyskeBank;
   
 
 ?>
